@@ -1,0 +1,100 @@
+﻿nav {
+	background-color:#5cb85c !important;
+
+}
+nav span {color:white !important}
+nav h4 {
+	text-align:center;
+	margin-top:17px;
+	margin-bottom:0px;
+	margin-right:48px;
+	color:white !important
+}
+.navbar-right {
+	float:right;
+	margin-top: -37px;
+}
+@media (min-width: 768px) {
+	.navbar-right {float:right; margin-top: -37px;}
+	.navbar-header {width:100%}
+}
+.navbar-default {
+	border:0
+}
+#content {
+	margin-top:70px
+}
+.media-left{
+	padding-left:16px;
+	padding-right:16px;
+}
+.time {
+	font-size:24px;
+	padding-left:6px;
+}
+.line {
+	width:4px;
+	height:34px;
+	background-color:#5cb85c;
+	margin-left:10px;
+	margin-right:10px
+}
+.icon {
+   margin-top:5px;
+}
+
+.green {
+	color:#5cb85c;
+}
+
+#content h4 {
+   color:#5cb85c;
+}
+.fa-sun-o {
+	width:24px
+}
+.date {
+	margin-left:24px
+}
+.addInput {    
+	border:0;
+	border-bottom:5px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#5cb85c;
+	margin-left:50px;
+	margin-right:50px;
+	width:calc(100% - 100px);
+	margin-top:15px;
+}
+.addInputButton {
+	color:white;
+	background-color:#5cb85c;
+	height:40px
+}
+.iconRight {
+	padding-right:10px
+}
+
+.info {
+	margin-left: 140px;
+	display: none;
+}
+
+.note, .bold{
+	font-weight: bold;
+}
+
+#settings-page, #add-page, #camera-page {
+	display: none;
+}
+
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
+
+.edit-icon {
+	display: none;
+}

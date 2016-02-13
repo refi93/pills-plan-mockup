@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--desc pre vyhladavace??-->
+		<meta name="description" content="">     
+		<meta name="keywords" content="medicine, alarm, pills">
+		<meta name="author" content="Revolware fl.">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Pillsplan</title>
+		<link rel="icon" href="img/logo3.png" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		  <link rel="stylesheet" href="fonts/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css">
+		  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+		  <script src="js/main.js"></script>
+		  <script src="js/mockup_data.js"></script>
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<script>
+	//google analytics
+	</script>
+	</head>
+	<body>
+		<span id="main-page" class="page-section">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand section-link" data-section-id="settings-page">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a>
+						<a class="section-link alert-trigger" data-section-id="main-page"><h4>PillsPlan</h4></a>
+						<div class="navbar-right">
+							<a class="navbar-brand section-link" data-section-id="add-page">
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section id="content">
+			</section>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+		</span>
+		<span id="add-page" class="page-section">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="section-link navbar-brand" data-section-id="main-page" href="index.html">
+							<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+						</a>
+						<a class="section-link" data-section-id="add-page"><h4>Add pill</h4>
+						<div class="navbar-right">
+							<a class="navbar-brand" href="#">
+								<span class="glyphicon glyphicon-camera section-link" data-section-id="camera-page" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section id="content">
+				<input class="addInput" name="medicine_name" placeholder="Medicine" />
+				<input class="addInput" name="start_date"placeholder="Beggining date" type="datetime" />
+				<input class="addInput" name="frequency" placeholder="Frequency (hours)" type="number" />
+				<input class="addInput" name="pills_count" placeholder="Number of pills in package" type="number" />
+				<input class="addInput" name="doctor_name" placeholder="Doctor's name" />
+				<button class="addInput addInputButton submit-pill-info">Pridať</button>
+			</section>
+		</span>
+		<span id="settings-page" class="page-section">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand section-link" data-section-id="main-page">
+							<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+						</a>
+						<a class="section-link" data-section-id="main-page"><h4>PillsPlan</h4></a>
+						<div class="navbar-right">
+							<a class="navbar-brand section-link" data-section-id="add-page">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section id="content">
+				<h3>Koho môžeme notifikovať?</h3>
+				<input class="addInput" name="notify_person_email" placeholder="e-mail" />
+				<input class="addInput" name="notify_person_phone" placeholder="phone" />
+				<button class="addInput addInputButton">Uložiť</button>
+			</section>
+		</span>
+		<span id="camera-page" class="page-section">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand section-link" data-section-id="settings-page">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a>
+						<a class="section-link" data-section-id="main-page"><h4>PillsPlan</h4></a>
+						<div class="navbar-right">
+							<a class="navbar-brand section-link" data-section-id="add-page">
+								<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section id="content">
+				<span class="receipt-img">
+					<img src="img/recept.jpg" style="width:100%; max-width:400px">
+				</span>
+				<span class="receipt-text" style="display:none">
+					<p><b>Liek:</b> FLIXOTIDE DISKUS 500</p>
+					<p><b>Dávka:</b> 2 tbl.</p>
+					<p><b>Frekvencia:</b> 2x denne</p>
+					<button class="addInput addInputButton submit-pill-info-from-img">Pridať</button>
+				</span>
+			</section>
+		</span>
+
+		<div class="modal fade pill-warning" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Upozornenie</h4>
+					</div>
+						<div class="modal-body">
+						<p>Nezabudnite si dať ACYLPIRIN, 2 tablety</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Neskôr</button>
+						<button type="button" class="btn btn-primary remove-acylpirin">OK</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	</body>
+</html>
